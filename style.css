@@ -1,5 +1,6 @@
 :root {
   --bg-color: white;
+  height: 100vh;
 }
 @media screen and(min-width) {
   :root {

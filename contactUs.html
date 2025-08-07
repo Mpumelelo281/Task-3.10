@@ -26,9 +26,37 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           }
+          /* Navbar */
+               .navbar {
+                background-color: #333;
+                color: white;
+              padding: 15px 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .navbar h1 {
+              font-size: 24px;
+            }
+
+            .nav-links {
+              display: flex;
+              gap: 20px;
+            }
+
+            .nav-links a {
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+            }
+
+            .nav-links a:hover {
+              text-decoration: underline;
+            }
           h1 {
             text-align: center;
-            color: #2c3e50;
+            color: white;
           }
           label {
             display: block;
@@ -37,7 +65,7 @@
           }
           input,
           textarea {
-            width: 100%;
+            width: 50%;
             padding: 0.8rem;
             margin-top: 0.5rem;
             border: 1px solid #ccc;
@@ -69,12 +97,46 @@
             font-size: 1rem;
             cursor: pointer;
           }
+          /* Footer */
+            footer {
+              background-color: #333;
+              color: white;
+              padding: 30px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+
+            .footer-section {
+              flex: 1 1 45%;
+              margin-bottom: 20px;
+            }
+
+            .footer-section h4 {
+              margin-bottom: 10px;
+            }
+
+            .footer-section p {
+              font-size: 14px;
+              color: white;
+            }
         </style>
       </head>
       <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <h1>Teddy services</h1>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Pricing</a>
+            <a href="contactUs.html">Contact</a>
+          </div>
+        </nav>
         <div class="container">
           <h1>Contact Us</h1>
-          <form action="#" method="POST" enctype="text/plain">
+          <form  action="https://formspree.io/f/mrblylqn"
+           method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required />
 
@@ -106,6 +168,18 @@
             };
         </script>
         <a href="privacy.html">Next</a>
+        <!-- Footer -->
+        <footer>
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>
+              We provide modern UI templates and tutorials for students and
+              developers.
+            </p>
+          </div>
+          <div class="footer-section">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contactUs.html">Contact Us</a>
       </body>
     </html>
   </body>
